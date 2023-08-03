@@ -11,7 +11,7 @@ plugins {
     id("com.github.johnrengelman.shadow") version "7.1.2"
 }
 
-group = "moe.fuqiuluo"
+group = "ruiovo.qsign"
 version = "1.1.7"
 
 repositories {
@@ -65,6 +65,7 @@ tasks {
         dir.resolve("BuildConfig.java").also {
             if (!it.exists()) it.createNewFile()
         }.writer().use {
+            it.write("package project;\n")
             it.write("public class BuildConfig {")
             it.write("    public static String version = \"${project.version}\";")
             it.write("}")
