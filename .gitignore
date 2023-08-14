@@ -4,3 +4,7 @@
 /build/classes/kotlin/main/
 /.idea
 /src/main/java/project/BuildConfig.java
+/txlib/8.9.71/stdout
+/txlib/8.9.71/.system_android_l2
+/txlib/8.9.71/stderr
+/txlib/8.9.71/stdin
